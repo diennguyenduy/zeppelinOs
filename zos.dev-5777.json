@@ -1,0 +1,67 @@
+{
+  "contracts": {
+    "Counter": {
+      "address": "0x14bEcAB38bf6fBc5Be4d184e3A6c07919925de7c",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b60e3806100256000396000f3fe",
+      "bodyBytecodeHash": "490ea7fefa82ccfd36ddff690228a5d4d6049fb34439ebc35557ec5a930f40de",
+      "localBytecodeHash": "8cd17e110067f5f7cbeeefb8cea9747045cf625908049506425152a546651047",
+      "deployedBytecodeHash": "8cd17e110067f5f7cbeeefb8cea9747045cf625908049506425152a546651047",
+      "types": {
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Counter",
+          "path": "contracts/Counter.sol",
+          "label": "value",
+          "astId": 3,
+          "type": "t_uint256",
+          "src": "46:20:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "zeppelinOs/Counter": [
+      {
+        "address": "0x60D7d26CE881F8fa9b3E7aA6443dbB850c176118",
+        "version": "1.0.0",
+        "implementation": "0x14bEcAB38bf6fBc5Be4d184e3A6c07919925de7c",
+        "kind": "Upgradeable"
+      },
+      {
+        "address": "0x2a8Dbdb76953d0F2482615E529594ca165C7bba6",
+        "version": "1.0.0",
+        "implementation": "0x53183ef8bfEa8892d3780EA64cEE5378b70912Cc",
+        "admin": "0xfDdF9401D8E5e642421890c0D763f4fDd7BFE767",
+        "kind": "Upgradeable"
+      },
+      {
+        "address": "0x535acDA4C9Ec5EDC735e3973da10a8dFC98B4CAA",
+        "version": "1.0.0",
+        "implementation": "0x14bEcAB38bf6fBc5Be4d184e3A6c07919925de7c",
+        "admin": "0xfDdF9401D8E5e642421890c0D763f4fDd7BFE767",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0xfDdF9401D8E5e642421890c0D763f4fDd7BFE767"
+  }
+}

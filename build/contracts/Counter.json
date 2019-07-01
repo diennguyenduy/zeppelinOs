@@ -1,0 +1,259 @@
+{
+  "fileName": "Counter.sol",
+  "contractName": "Counter",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Counter {\n  uint256 public value;\n\n  function increase() public {\n    value++;\n  }\n\n  function decrease() public {\n    value--;\n  }\n}",
+  "sourcePath": "contracts/Counter.sol",
+  "sourceMap": "25:142:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:142:0;;;;;;;;;;",
+  "deployedSourceMap": "25:142:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:142:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;46:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;120:45;;;:::i;:::-;;71;;;:::i;:::-;;46:20;;;;;;:::o;120:45::-;153:5;;:7;;;;;;;;;;;;;;;;;;120:45;:::o;71:::-;104:5;;:7;;;;;;;;;;;;;;;;;71:45;:::o",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "decrease",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "increase",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "contracts/Counter.sol",
+    "exportedSymbols": {
+      "Counter": [
+        18
+      ]
+    },
+    "id": 19,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 18,
+        "linearizedBaseContracts": [
+          18
+        ],
+        "name": "Counter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 18,
+            "src": "46:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "46:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9,
+              "nodeType": "Block",
+              "src": "98:18:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 7,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "104:7:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "104:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 8,
+                  "nodeType": "ExpressionStatement",
+                  "src": "104:7:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "88:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "98:0:0"
+            },
+            "scope": 18,
+            "src": "71:45:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 16,
+              "nodeType": "Block",
+              "src": "147:18:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "--",
+                    "prefix": false,
+                    "src": "153:7:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 13,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "153:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 15,
+                  "nodeType": "ExpressionStatement",
+                  "src": "153:7:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 17,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decrease",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "137:2:0"
+            },
+            "returnParameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:0:0"
+            },
+            "scope": 18,
+            "src": "120:45:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 19,
+        "src": "25:142:0"
+      }
+    ],
+    "src": "0:167:0"
+  },
+  "bytecode": "0x60806040523480156100115760006000fd5b50610017565b60e3806100256000396000f3fe608060405234801560105760006000fd5b506004361060405760003560e01c80633fa4f245146046578063d732d955146062578063e8927fbc14606a576040565b60006000fd5b604c6072565b6040518082815260200191505060405180910390f35b6068607b565b005b60706095565b005b60006000505481565b60006000818150548092919060019003919050909055505b565b600060008181505480929190600101919050909055505b56fea265627a7a72305820b62bcd5d877180ab239389b90992601ec5ee75dbc304cc59bb97e27588a9cb3e64736f6c634300050a0032",
+  "deployedBytecode": "0x608060405234801560105760006000fd5b506004361060405760003560e01c80633fa4f245146046578063d732d955146062578063e8927fbc14606a576040565b60006000fd5b604c6072565b6040518082815260200191505060405180910390f35b6068607b565b005b60706095565b005b60006000505481565b60006000818150548092919060019003919050909055505b565b600060008181505480929190600101919050909055505b56fea265627a7a72305820b62bcd5d877180ab239389b90992601ec5ee75dbc304cc59bb97e27588a9cb3e64736f6c634300050a0032",
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.10+commit.5a6ea5b1.Emscripten.clang",
+    "optimizer": {},
+    "evmVersion": "constantinople"
+  },
+  "networks": {
+    "5777": {
+      "links": {},
+      "events": {},
+      "address": "0x535acDA4C9Ec5EDC735e3973da10a8dFC98B4CAA",
+      "updated_at": 1561944213664
+    }
+  }
+}
